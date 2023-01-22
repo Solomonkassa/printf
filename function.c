@@ -12,6 +12,7 @@ int (*get_function(const char *specifier))(va_list)
 	int m;
 
 	type_t types[] = {
+		{"%", print_pe},
 		{"s", print_s},
 		{"c", print_c},
 		{"d", print_d},
