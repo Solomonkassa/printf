@@ -10,12 +10,8 @@
 int print_c(va_list args)
 {
 	char C = va_arg(args, int);
-	int count = 0, retval;
 
-	retval = _putchar(C);
-	if (retval == -1)
-		return (-1);
-	count++;
+	_putchar(C);
 
-	return (count);
+	return (C);
 }
