@@ -17,11 +17,11 @@
 
 int _printf(const char *format, ...)
 {
-	int i = 0;
-	va_list rm;
+	int count = 0;
+	va_list args;
 	int (*function)(va_list) = NULL;
 
-	va_start(rm, format);
+	va_start(args, format);
 
 	while (*format)
 	{
@@ -38,22 +38,22 @@ int _printf(const char *format, ...)
 				count += 2;
 			}
 			else
-				i += function(rm);
+				count += function(args);
 		}
 		else if (*format == '%' && *(format + 1) == '%')
 		{
 			format++;
 			_putchar('%');
-			i++;
+			count++;
 		}
 		else
 		{
 			_putchar(*format);
-			i++;
+			count++;
 		}
 
 		format++;
 	}
-	va_end(rm);
-	return (i);
+	va_end(args);
+	return (count);
 }
