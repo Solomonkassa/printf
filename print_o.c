@@ -1,6 +1,7 @@
 #include "main.h"
+#include <stdio.h>
 /**
-  * print_o - prints octal numbers from decimal
+  *  print_o - prints octal numbers from decimal
   * @args: the number
   *
   * Return: number of chars printed
