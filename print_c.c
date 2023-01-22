@@ -9,11 +9,13 @@
 
 int print_c(va_list args)
 {
-	int aux;
+	char C = va_arg(args, int);
+	int count = 0, retval;
 
-	aux = va_arg(list, int);
+	retval = _putchar(C);
+	if (retval == -1)
+		return (-1);
+	count++;
 
-	_putchar(aux);
-
-	return (1);
+	return (count);
 }
