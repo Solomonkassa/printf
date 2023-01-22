@@ -7,18 +7,23 @@
  * Return: the number of bytes printed
  */
 
-int print_s(va_list s)
+int print_s(va_list args)
 {
-	char *my_string;
-	int  i = 0;
+	char *str = va_arg(args, char *);
+	int count = 0;
+	int retVal;
 
-	my_string = va_arg(s, char *);
-	if (my_string == NULL)
-		my_string = "(null)";
-	while (my_string[i])
+	if (!str)
+		str = "(null)";
+
+	while (*str)
 	{
-		_putchar(my_string[i]);
-		i++;
+		retVal = _putchar(*str);
+		if (retVal == -1)
+			return (-1);
+		count++;
+		str++;
 	}
-	return (i);
+
+	return (count);
 }
