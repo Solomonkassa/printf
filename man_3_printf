@@ -1,0 +1,87 @@
+.TH _printf 3 "22 Jan 2023" "" "_printf man page"
+.SH NAME
+_printf \- a basic replica of the standard printf function
+
+.SH SYNOPSIS
+.B #include \(dqmain.h\(dq
+
+.BI "int _printf(const char *" "format, ..." ");"
+
+.SH DESCRIPTION
+Write output to stdout using the format string. The format string is comprised of 0 or more directives and contains specifiers beginning with the character \(dq%\(dq. The specifier use the corresponding argument to print the variable.
+
+.SH RETURN VALUE
+On success, \fB_printf\fR returns the number of bytes printed, excluding the null byte. On failure, returns -1.
+
+.SH SPECIFERS
+.TP
+d, i
+The int argument is printed in signed decimal notation
+.TP
+u
+The \fIunsigned int\fR argument is printed in unsigned decimal notation
+.TP
+o
+The \fIunsigned int\fR argument is printed in unsigned octal notation
+.TP
+x, X
+The \fIunsigned int\fR argument is printed in unsigned hexadecimal notation. The letters \(dqabcdef\(dq are used for x; the letters \(dqABCDEF\(dq are used for X.
+.TP
+b
+The \fIunsigned int\fR argument is printed in unsigned binary notation.
+.TP
+c
+The \fIint\fR argument is converted to an \fIunsigned char\fR and printed.
+.TP
+s
+The \fIconst char *\fR argument is expected to be a pointer to a character array. Characters up to, but not including, the terminating null byte are written
+.TP
+%
+A '%' is written. No argument is converted.
+.TP
+p
+The \fIvoid *\fR pointer argument is printed in hexadecimal format beginning with '0x'.
+.TP
+r
+The \fIconst char *\fR argument is expected to be a pointer to a character array. Characters are written in reverse order up to, but not including, the terminating null byte.
+.TP
+R
+The \fIconst char *\fR argument is expected to be a pointer to a character array. Characters are encoded into ROT13 and written up to, but not including, the terminating null byte.
+.TP
+F
+Regardless of what is passed to the function, this specifier only prints an expletive.
+
+
+.SH EXAMPLE
+To print text mixed with a \fIname\fR string variable and an \fIage\fR integer variable:
+.PP
+.nf
+.RS
+#include "main.h"
+#include <string.h>
+
+int main(int ac, char **av)
+{
+	int age;
+	char *name;
+
+	if (ac != 3)
+	   return (-1);
+
+	name = av[1];
+	age = atoi(av[2]);
+
+	_printf("Hello! My name is %s and I am %d years old.\n", name, age);
+
+	return (0);
+}
+.fi
+.PP
+
+.SH SEE ALSO
+.BR printf (3)
+
+.SH AUTHOR
+Solomon kassa, Nawwal Ismael
+
+
