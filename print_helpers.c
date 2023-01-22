@@ -6,8 +6,7 @@
   * Return: void
   */
 int  print_number(unsigned int n)
-{
-  int retval;
+{											int retval;
 	unsigned int num = n;
 
 	if (num / 10)

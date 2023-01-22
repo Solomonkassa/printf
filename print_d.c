@@ -1,6 +1,7 @@
 #include "main.h"
 /**
-  * print_d - prints decimal numbers, positive and negative
+  * print_d - prints decimal numbers,
+  * positive and negative			  
   * @args: the number 
   *
   * Return: count
