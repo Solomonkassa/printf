@@ -1,4 +1,4 @@
-![logo](https://github.com/Solomonkassa/Solomonkassa/blob/main/high-five-icegif-11.gif)
+![logo](https://github.com/Solomonkassa/Solomonkassa/blob/main/hello-world.gif)
 
 # printf
 
