@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 
 /**
  * print_upperHex - simultaneous convert and print integer in hexadecimal
