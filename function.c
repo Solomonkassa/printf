@@ -9,7 +9,7 @@
 
 int (*get_function(const char *specifier))(va_list)
 {
-	int m;
+	int idx;
 
 	type_t types[] = {
 		{"s", print_s},
@@ -28,10 +28,10 @@ int (*get_function(const char *specifier))(va_list)
 		{NULL, NULL}
 	};
 
-	for (m = 0; types[m].hm; m++)
+	for (idx = 0; types[idx].identifier; idx++)
 	{
-		if (*specifier == types[m].hm[0])
-			return (types[m].print);
+		if (*specifier == types[idx].identifier[0])
+			return (types[idx].print);
 	}
 
 	return (NULL);
