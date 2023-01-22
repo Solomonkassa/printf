@@ -21,7 +21,6 @@ int _putchar(char c);
 int (*get_function(const char *specifier))(va_list);
 int _printf(const char *, ...);
 int _strlen(char *);
-int print_rev(va_list args);
 int rot13(va_list args);
 int print_number(unsigned int n);
 int countDigits(unsigned int num);
@@ -39,5 +38,6 @@ int print_s(va_list args);
 int print_c(va_list args);
 int print_u(va_list args);
 int print_F(va_list args);
+int print_rev(va_list args);
 
 #endif /* MAIN_H */
