@@ -3,15 +3,8 @@
 
 #include <stdlib.h>
 #include <stdarg.h>
-#include <stdio.h>
-#include <limits.h>
 #include <unistd.h>
 /**
- *   Authors & copy;
- *
- * - Solomon Kassa  https://github.com/Solomonkassa
- * - Nawwal Ismael  https://github.com/Newi-M
- *
  * struct type - connect conversion specifiers with the correct print function
  * @print: a function pointer for the print functions
  * @identifier: the conversion specifier
@@ -45,5 +38,4 @@ int print_c(va_list args);
 int print_u(va_list args);
 int print_F(va_list args);
 
-
-#endif
+#endif /* MAIN_H */
