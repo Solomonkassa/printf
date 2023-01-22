@@ -147,17 +147,17 @@ Specifier                |Output                        |Examples |
                 | Functions that returns octal number. | `None`
 |               | Calls hexadecimal numbers (Uppercase). | `None` |
 |               | Calls hexadecimal numbers (lowercase).  | `None` |
-`printf_f.c`    | Functions that get flags. | `None` |
-`printf_p.c`    | function get percisions  | `None` | 
-`printf_w.c`    | function print width. | `None` |
-`printf_h.c`    | function handle pointer . | `None` |
-`w_hand.c`      | functions handle character | `none` | 
-                |function write number . | `none` |
-`print_p_r_rot13.c` | function print pointer. | `none` |
-`             ` | function print non printable. | `None` |
-`printf_rot13.c`  function print rot13. | `None` |
-                 | function print reverse. | `None` |
-`_putchar.c`     | Custom putchar function. | `None` |
+|`printf_f.c`    | Functions that get flags. | `None` |
+|`printf_p.c`    | function get percisions  | `None` | 
+|`printf_w.c`    | function print width. | `None` |
+|`printf_h.c`    | function handle pointer . | `None` |
+|`w_hand.c`      | functions handle character | `none` | 
+|                |function write number . | `none` |
+|`print_p_r_rot13.c` | function print pointer. | `none` |
+|`             ` | function print non printable. | `None` |
+|`printf_rot13.c` | function print rot13. | `None` |
+|                 | function print reverse. | `None` |
+|`_putchar.c`     | Custom putchar function. | `None` |
 
 
 ------------
