@@ -4,9 +4,10 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <stdio.h>
+#include <limits.h>
 #include <unistd.h>
 /**
- *   Authors &copy;
+ *   Authors & copy;
  *
  * - Solomon Kassa  https://github.com/Solomonkassa
  * - Nawwal Ismael  https://github.com/Newi-M
