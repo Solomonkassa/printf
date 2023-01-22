@@ -7,7 +7,7 @@
  * Return: the number of bytes printed
  */
 
-int print_s(va_list args)
+int print_s(va_list s)
 {
 	char *my_string;
 	int  i = 0;
