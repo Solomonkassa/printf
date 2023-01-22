@@ -38,7 +38,7 @@ int _printf(const char *format, ...)
 				i += 2;
 			}
 			else
-				i += function(args);
+				i += function(rm);
 		}
 		else if (*format == '%' && *(format + 1) == '%')
 		{
