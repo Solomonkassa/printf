@@ -238,7 +238,7 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- Solomon Kassa  github.com/Solomonkassa
-- Nawwal Ismael  github.com/Newi-M
+- Solomon Kassa  https://github.com/Solomonkassa
+- Nawwal Ismael  https://github.com/Newi-M
 
 
