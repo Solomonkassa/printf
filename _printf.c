@@ -31,6 +31,12 @@ int _printf(const char *format, ...)
 			function = get_function(format);
 			if (*(format) == '\0')
 				return (-1);
+			else if (function == NULL)
+			{
+				_putchar(*(format - 1));
+				_putchar(*format);
+				count += 2;
+			}
 			else
 				i += function(rm);
 		}
