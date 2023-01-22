@@ -7,11 +7,15 @@
  * Return: the number of bytes printed
  */
 
-int print_c(va_list c)
+int print_c(va_list args)
 {
-unsigned char my_char;
+	char C = va_arg(args, int);
+	int count = 0, retval;
 
-	my_char = va_arg(c, int);
-	_putchar(my_char);
-	return (1);
+	retval = _putchar(C);
+	if (retval == -1)
+		return (-1);
+	count++;
+
+	return (count);
 }
