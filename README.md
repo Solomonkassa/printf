@@ -144,7 +144,7 @@ Specifier                |Output                        |Examples |
 |`_printf.c`|Main printf function file. Calls other functions.|`printf_(name of var).c file` |
 |`printf_c_s.c`|Contains character & string print function.|`None` |
 |`printf_h_u.c` | Contains decimal & unsigned integer functions. | `None` | 
-                | Functions that returns octal number. | `None`
+|               | Functions that returns octal number. | `None`  |
 |               | Calls hexadecimal numbers (Uppercase). | `None` |
 |               | Calls hexadecimal numbers (lowercase).  | `None` |
 |`printf_f.c`    | Functions that get flags. | `None` |
