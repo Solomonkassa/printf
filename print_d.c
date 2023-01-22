@@ -1,15 +1,15 @@
 #include "main.h"
+#include <stdio.h>
 /**
-  * print_d - prints decimal numbers,
-  * positive and negative			  
-  * @args: the number 
+  * print_d - prints decimal numbers, positive and negative
+  * @args: the number i'm printing
   *
   * Return: count
   */
 int print_d(va_list args)
 {
 	int num = va_arg(args, int);
-  
+/*	int digits = num; */
 	int count = 0;
 	int retval;
 	unsigned int unsign;
