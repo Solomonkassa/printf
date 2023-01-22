@@ -1,8 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <limits.h>
-#include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
@@ -13,7 +11,7 @@
  */
 typedef struct type
 {
-	char *hm;
+	char *identifier;
 	int (*print)(va_list);
 } type_t;
 
