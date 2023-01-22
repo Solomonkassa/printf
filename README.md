@@ -142,13 +142,13 @@ Specifier                |Output                        |Examples |
 |`man_3_printf`|Man page of the _printf() function.| `None` |
 |`main.h`	| Header file with the data type struct, standard libraries and custom prototypes.| `*.c compilation` |
 |`_printf.c`|Main printf function file. Calls other functions.|`printf_(name of var).c file` |
-|`printf_37.c`|Contains percentage print function.|`None` |
-|`printf_i.c` | Contains decimal and integer functions. | `None` | 
-`printf_c.c` | Custom function for char data type. | `None`
-|`printf_s.c` | Function that calls string type variable. | `None` |
-|`printf_b.c` | Function that gets the binary | `None` |
+|`printf_c_s.c`|Contains character & string print function.|`None` |
+|`printf_h_u.c` | Contains decimal & unsigned integer functions. | `None` | 
+`               | Functions that returns octal number. | `None`
+|               | Calls hexadecimal numbers (Uppercase). | `None` |
+|               | Calls hexadecimal numbers (lowercase).  | `None` |
 `printf_o.c` | Functions that returns octal number. | `None` |
-`printf_hex.c` | Calls hexadecimal numbers (lowercase). | `None` | 
+`printf_hex.c` |  | `None` | 
 `printf_HEX.c` | Calls hexadecimal numbers (Uppercase). | `None` |
 `printf_unsigned.c` | Returns an unisgined data type. | `None` |
 `printf_hex_aux.c` | Auxiliar function for hexadecimal specific functions (lowercase). | `printf_exclusive_string.c` | 
