@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- * AUTHOR - Solomon kassa && Nawwal Ismael
- *
  * _printf - print output to stdout according to a format string
  * @format: the format of the string to print
  *
