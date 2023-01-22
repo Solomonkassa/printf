@@ -33,11 +33,15 @@ int print_x(va_list args);
 void print_lowerHex(unsigned int num, int *count);
 int print_X(va_list args);
 void print_upperHex(unsigned int num, int *count);
+int print_String(va_list l);
+int isNonAlphaNumeric(char c);
+char *convert(unsigned long int num, int base, int lowercase);
 int print_p(va_list args);
 int print_s(va_list args);
 int print_c(va_list args);
 int print_u(va_list args);
 int print_F(va_list args);
 int print_rev(va_list args);
+int _puts(char *str);
 
 #endif /* MAIN_H */
