@@ -1,12 +1,13 @@
 #include "main.h"
 /**
   * print_number - we're printing some serious numbers
-  * @n: that's the number
+  * @n: that's the number, fear it.
   *
   * Return: void
   */
 int  print_number(unsigned int n)
-{											int retval;
+{
+	int retval;
 	unsigned int num = n;
 
 	if (num / 10)
