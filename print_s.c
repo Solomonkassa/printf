@@ -9,12 +9,22 @@
 
 int print_s(va_list args)
 {
-	
-	char *p;
-	int p_len;
+	char *str = va_arg(args, char *);
+	int count = 0;
+	int retVal;
 
-	p = va_arg(list, char*);
-	p_len = print((p != NULL) ? p : "(null)");
+	if (!str)
+		str = "(null)";
 
-	return (p_len);
+	while (*str)
+	{
+		retVal = _putchar(*str);
+		if (retVal == -1)
+			return (-1);
+		count++;
+		str++;
+	}
+
+	return (count);
+
 }
