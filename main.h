@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdarg.h>
 #include <unistd.h>
-#include <limits.h>
 /**
  * struct type - connect conversion specifiers with the correct print function
  * @print: a function pointer for the print functions
