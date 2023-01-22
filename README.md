@@ -144,20 +144,20 @@ Specifier                |Output                        |Examples |
 |`_printf.c`|Main printf function file. Calls other functions.|`printf_(name of var).c file` |
 |`printf_c_s.c`|Contains character & string print function.|`None` |
 |`printf_h_u.c` | Contains decimal & unsigned integer functions. | `None` | 
-`               | Functions that returns octal number. | `None`
+                | Functions that returns octal number. | `None`
 |               | Calls hexadecimal numbers (Uppercase). | `None` |
 |               | Calls hexadecimal numbers (lowercase).  | `None` |
-`printf_o.c` | Functions that returns octal number. | `None` |
-`printf_hex.c` |  | `None` | 
-`printf_HEX.c` | Calls hexadecimal numbers (Uppercase). | `None` |
-`printf_unsigned.c` | Returns an unisgined data type. | `None` |
-`printf_hex_aux.c` | Auxiliar function for hexadecimal specific functions (lowercase). | `printf_exclusive_string.c` | 
-`printf_HEX_aux.c` | Auxiliar function hexadecimal specific functions (Uppercase). | `printf_p.c` |
-`printf_exclusive_string.c` | Returns a string and non readable characters are printed in hexadecimal numbers (Lowercase). | `printf_hex_aux.c` |
-`printf_srev.c` | Returns a string in reverse. | `None` |
-`printf_rot13.c` | Returns a string in Rot13. | `None` |
-`printf_str.c` | Auxiliar functions such as strlen and strcpy. | `None` |
-`_putchar.c` | Custom putchar function. | `None` |
+`printf_f.c`    | Functions that get flags. | `None` |
+`printf_p.c`    | function get percisions  | `None` | 
+`printf_w.c`    | function print width. | `None` |
+`printf_h.c`    | function handle pointer . | `None` |
+`w_hand.c`      | functions handle character | `none` | 
+                |function write number . | `none` |
+`print_p_r_rot13.c` | function print pointer. | `none` |
+`             ` | function print non printable. | `None` |
+`printf_rot13.c`  function print rot13. | `None` |
+                 | function print reverse. | `None` |
+`_putchar.c`     | Custom putchar function. | `None` |
 
 
 ------------
