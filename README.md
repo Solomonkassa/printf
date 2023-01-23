@@ -147,11 +147,11 @@ Specifier                |Output                        |Examples |
 |               | Functions that returns octal number. | `None`  |
 |               | Calls hexadecimal numbers (Uppercase). | `None` |
 |               | Calls hexadecimal numbers (lowercase).  | `None` |
-|`printf_f.c`    | Functions that get flags. | `None` |
-|`printf_p.c`    | function get percisions  | `None` | 
-|`printf_w.c`    | function print width. | `None` |
-|`printf_h.c`    | function handle pointer . | `None` |
-|`w_hand.c`      | functions handle character | `none` | 
+|`print_flag.c`    | Functions that get flags. | `None` |
+|`print_precision.c`    | function get percisions  | `None` | 
+|`printf_width.c`    | function print width. | `None` |
+|`print_handle.c`    | function handle pointer . | `None` |
+|`write_handle.c`      | functions handle character | `none` | 
 |                 |function write number . | `none` |
 |`print_p_r_rot13.c` | function print pointer. | `none` |
 |              | function print non printable. | `None` |
