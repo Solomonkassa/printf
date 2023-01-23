@@ -149,7 +149,8 @@ Specifier                |Output                        |Examples |
 |               | Calls hexadecimal numbers (lowercase).  | `None` |
 |`print_flag.c`    | Functions that get flags. | `None` |
 |`print_precision.c`    | function get percisions  | `None` | 
-|`printf_width.c`    | function print width. | `None` |
+|`print_width.c`    | function print width. | `None` |
+|`print_size.c`    | function print size. | `None` |
 |`print_handle.c`    | function handle pointer . | `None` |
 |`write_handle.c`      | functions handle character | `none` | 
 |                 |function write number . | `none` |
