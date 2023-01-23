@@ -1,29 +1,26 @@
 #include "main.h"
 
 /**
- * print_s - print a string or char argument
- * @args: va_list containing the string or char to print as the next element
+ * get_size - Calculates the size to cast the argument
+ * @format: Formatted string in which to print the arguments
+ * @i: List of arguments to be printed.
  *
- * Return: the number of bytes printed
+ * Return: Precision.
  */
-
-int print_s(va_list args)
+int get_size(const char *format, int *i)
 {
-	char *str = va_arg(args, char *);
-	int count = 0;
-	int retVal;
+	int curr_i = *i + 1;
+	int size = 0;
 
-	if (!str)
-		str = "(null)";
+	if (format[curr_i] == 'l')
+		size = S_LONG;
+	else if (format[curr_i] == 'h')
+		size = S_SHORT;
 
-	while (*str)
-	{
-		retVal = _putchar(*str);
-		if (retVal == -1)
-			return (-1);
-		count++;
-		str++;
-	}
+	if (size == 0)
+		*i = curr_i - 1;
+	else
+		*i = curr_i;
 
-	return (count);
+	return (size);
 }
