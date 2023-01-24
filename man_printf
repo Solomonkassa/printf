@@ -83,5 +83,6 @@ int main(int ac, char **av)
 
 .SH AUTHOR
 Solomon kassa, Nawwal Ismael
+.https://github.com/Solomonkassa/printf/edit/master/man_printf
 
 
