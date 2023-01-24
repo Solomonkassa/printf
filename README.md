@@ -239,7 +239,7 @@ All the above options work well together.
 
 ### Authors &copy;
 
-- Solomon Kassa  https://github.com/Solomonkassa
-- Nawwal Ismael  https://github.com/Newi-M
+- <a href="https://github.com/Solomonkassa">Solomon Kassa</a>
+- <a href="https://github.com/Newi-M">Nawwal Ismael</a>
 
 
